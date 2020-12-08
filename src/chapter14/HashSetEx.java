@@ -6,7 +6,7 @@ public class HashSetEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashSet<String> set =new HashSet<String>();
+		HashSet<String> set = new HashSet<String>();
 		set.add("A");
 		set.add("B");
 		set.add("C");
@@ -15,5 +15,4 @@ public class HashSetEx {
 		set.add(new String("A"));
 		System.out.println(set);
 	}
-
 }
