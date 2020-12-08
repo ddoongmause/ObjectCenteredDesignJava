@@ -1,7 +1,9 @@
 package chapter14;
 
-public class Player {
+import java.util.TreeSet;
 
+public class Player {
+//public class Player implements Comparable<Player>{
 	private String name;
 	private String nation;
 	
@@ -17,4 +19,21 @@ public class Player {
 	public String toString() {
 		return name + ":" + nation;
 	}
+	public boolean equals(Object obj) {
+		String compareValue = obj.toString();
+		String thisValue = toString();
+		System.out.println("equals");
+		return thisValue.equals(compareValue);
+	}
+	public int hashCode() {
+		return toString().hashCode();
+	}
+
+	/*@Override
+	public int compareTo(Player other) {
+		// TODO Auto-generated method stub
+		return name.compareTo(other.name);
+	}*/
+	
+	
 }
